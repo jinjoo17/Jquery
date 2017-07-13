@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("input[type='button']").click(function(){
+			$("div").empty();
+			$("div:eq(0)").append("<input type='text'/><br/>);
+				
+		
+		});
+		
+		
+	});
+	
+
+</script>
+</head>
+<body >
+
+행:<input type="text" id="row"/>X
+열:<input type="text" id="col"/>
+<input type="button" value="생성" id="btn"/>
+<div id="msg1"></div>
+<hr>
+<div id="msg2"></div>
+</body>
+</html>

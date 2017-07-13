@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function btn(){
+		//alert("Hello jQuery");
+		var start=document.getElementById("start").value;
+		var end=document.getElementById("end").value;
+		var sum=0;
+		for(var i=start;i<=end;i++){
+			sum+=parseInt(i);
+		}
+		document.getElementById("data").value=sum;
+	}
+</script>
+</head>
+<body>
+<input type="button" value="클릭" onclick="btn()"/>
+<input type="text" name="start" id="start"/>~
+<input type="text" name="end" id="end"/>=
+<input type="text" name="data" id="data"/>
+
+</body>
+</html>

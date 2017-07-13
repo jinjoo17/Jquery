@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+
+<style type="text/css">
+	body{
+		font-size: 12px;
+	}
+</style>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript" src="api.js" charset="utf-8"></script>
+<script type="text/javascript"></script>
+</head>
+<body>
+<hr/>
+<fieldset>
+	<legend>회원가입</legend>
+	<form id="frm">
+	<input type="hidden" name="num" id="num".>
+	<table>
+		<tr>
+			<td>여름</td>
+			<td><input type='text' name='irum'id='irum'/></td>
+		</tr>
+		<tr>
+			<td>나이</td>
+			<td><input type='text' name='age' id='age'size="5"/></td>
+		</tr>
+		<tr>
+			<td>이메일</td>
+			<td><input type='text' name='email' id='email'/></td>
+		</tr>
+		<tr>
+			<td>자기소개</td>
+			<td><textarea rows="5" cols="30" name='intro' id='intro'></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="2" align="center">
+			<div id='inup'><input type="button" value="가입" id="btn"/></div>
+			<input type="reset" value="취소" id="rebtn"/></td>
+		</tr>
+		</table>
+		</form>
+</fieldset>
+<fieldset>
+	<legend>회원목록</legend>
+	<div id="msg"></div>
+	
+	</fieldset>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+<script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			var r=$("#row").val();
+			var c=$("#col").val();
+			var str="<table border='1'>";
+			for(var i=1;i<=r;i++){
+				str+="<tr>";
+				for(var j=1;j<=c;j++){
+					str+="<td>★</td>";
+					
+				}
+				str+="</tr>";
+			}
+			str+="</table>";
+			$("#msg").html(str);
+		});
+	});
+
+</script>
+</head>
+<body>
+행:<input type="text" id="row"/>X
+열:<input type="text" id="col"/>
+<input type="button" value="생성" id="btn"/>
+<div id="msg"></div>
+
+</body>
+</html>
